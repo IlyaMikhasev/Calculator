@@ -7,28 +7,80 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using static Calculator.Form_type;
 
 namespace Calculator
 {
     public partial class Form1 : Form
     {
+        List<Button> buttons;
+        Point pointStart;
         double num1, num2;
         string input=string.Empty;
         char symbol =' ';
         Culculator myCalc;
+        static Size _window =Screen.PrimaryScreen.Bounds.Size;
+        int _heigthForm = _window.Height/3;
+        int _widthForm = _window.Width/4;
         public Form1()
         {
-            myCalc = new Culculator();
             InitializeComponent();
+            this.Height = _heigthForm;
+            this.Width = _widthForm;
+            buttons = new List<Button>() {b_0,b_1,b_2,b_3,b_4,b_5,b_6,b_7,b_8,b_9,b_div,b_dot,b_equals,b_multi,b_subs,b_sum };
+            myCalc = new Culculator();
             openFileDialog1.Filter = "Text files(*.txt)|*.txt|All files(*.*)|*.*";
             saveFileDialog1.Filter = "Text files(*.txt)|*.txt|All files(*.*)|*.*";
+            this.MouseDown += Form1_MouseDown;
+            this.MouseMove += Form1_MouseMove;
+
+        }
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+            // если нажата левая кнопка мыши
+            if (e.Button == MouseButtons.Left)
+            {
+                pointStart = new Point(e.X, e.Y);
+            }
         }
 
+        private void Form1_MouseMove(object sender, MouseEventArgs e)
+        {
+            // если нажата левая кнопка мыши
+            if ((e.Button & MouseButtons.Left) != 0)
+            {
+                // получаем новую точку положения формы
+                Point deltaPos = new Point(e.X - pointStart.X, e.Y - pointStart.Y);
+                // устанавливаем положение формы
+                this.Location = new Point(this.Location.X + deltaPos.X,
+                  this.Location.Y + deltaPos.Y);
+            }
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
-           
+            addChoiceForm();
         }
+        private void addChoiceForm()
+        {
+            var items = new object[] {
+            "стандарт",
+            "элипс",
+            "трапеция",
+            "восьмиграник"};
+            cb_Visual_type.Items.AddRange(items);
+            cb_Visual_type.SelectedValueChanged += CmbChoice_SelectedValueChanged;
+            this.Controls.Add(cb_Visual_type);
+        }
+
+        private void CmbChoice_SelectedValueChanged(object sender, EventArgs e)
+        {
+            Form_type.setOriginalForm(this, ((ComboBox)sender).SelectedItem.ToString());
+            foreach (var button in buttons)
+            {
+                Form_type.setOriginalButton(button, ((ComboBox)sender).SelectedItem.ToString());
+            }
+        }
+
         private void b_0_Click(object sender, EventArgs e)
         {
             Display.Text += 0;
@@ -187,6 +239,11 @@ namespace Calculator
             // читаем файл в строку
             string fileText = System.IO.File.ReadAllText(filename);
             Display.Text = fileText;
+        }
+
+        private void b_close_click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
         private void b_dot_Click(object sender, EventArgs e)

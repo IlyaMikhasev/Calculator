@@ -49,12 +49,14 @@
             this.Display = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.b_close = new System.Windows.Forms.Button();
+            this.cb_Visual_type = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // b_1
             // 
             this.b_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_1.Location = new System.Drawing.Point(12, 131);
+            this.b_1.Location = new System.Drawing.Point(49, 89);
             this.b_1.Name = "b_1";
             this.b_1.Size = new System.Drawing.Size(35, 30);
             this.b_1.TabIndex = 2;
@@ -65,7 +67,7 @@
             // b_2
             // 
             this.b_2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_2.Location = new System.Drawing.Point(71, 131);
+            this.b_2.Location = new System.Drawing.Point(90, 89);
             this.b_2.Name = "b_2";
             this.b_2.Size = new System.Drawing.Size(35, 30);
             this.b_2.TabIndex = 2;
@@ -76,7 +78,7 @@
             // b_3
             // 
             this.b_3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_3.Location = new System.Drawing.Point(128, 131);
+            this.b_3.Location = new System.Drawing.Point(131, 89);
             this.b_3.Name = "b_3";
             this.b_3.Size = new System.Drawing.Size(35, 30);
             this.b_3.TabIndex = 2;
@@ -87,7 +89,7 @@
             // b_4
             // 
             this.b_4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_4.Location = new System.Drawing.Point(12, 185);
+            this.b_4.Location = new System.Drawing.Point(49, 125);
             this.b_4.Name = "b_4";
             this.b_4.Size = new System.Drawing.Size(35, 30);
             this.b_4.TabIndex = 2;
@@ -98,7 +100,7 @@
             // b_7
             // 
             this.b_7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_7.Location = new System.Drawing.Point(12, 244);
+            this.b_7.Location = new System.Drawing.Point(49, 161);
             this.b_7.Name = "b_7";
             this.b_7.Size = new System.Drawing.Size(35, 30);
             this.b_7.TabIndex = 2;
@@ -109,7 +111,7 @@
             // b_5
             // 
             this.b_5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_5.Location = new System.Drawing.Point(71, 185);
+            this.b_5.Location = new System.Drawing.Point(90, 125);
             this.b_5.Name = "b_5";
             this.b_5.Size = new System.Drawing.Size(35, 30);
             this.b_5.TabIndex = 2;
@@ -120,7 +122,7 @@
             // b_8
             // 
             this.b_8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_8.Location = new System.Drawing.Point(71, 244);
+            this.b_8.Location = new System.Drawing.Point(90, 161);
             this.b_8.Name = "b_8";
             this.b_8.Size = new System.Drawing.Size(35, 30);
             this.b_8.TabIndex = 2;
@@ -131,7 +133,7 @@
             // b_6
             // 
             this.b_6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_6.Location = new System.Drawing.Point(128, 185);
+            this.b_6.Location = new System.Drawing.Point(131, 125);
             this.b_6.Name = "b_6";
             this.b_6.Size = new System.Drawing.Size(35, 30);
             this.b_6.TabIndex = 2;
@@ -142,7 +144,7 @@
             // b_9
             // 
             this.b_9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_9.Location = new System.Drawing.Point(128, 244);
+            this.b_9.Location = new System.Drawing.Point(131, 161);
             this.b_9.Name = "b_9";
             this.b_9.Size = new System.Drawing.Size(35, 30);
             this.b_9.TabIndex = 2;
@@ -153,7 +155,7 @@
             // b_dot
             // 
             this.b_dot.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_dot.Location = new System.Drawing.Point(12, 302);
+            this.b_dot.Location = new System.Drawing.Point(49, 197);
             this.b_dot.Name = "b_dot";
             this.b_dot.Size = new System.Drawing.Size(35, 30);
             this.b_dot.TabIndex = 2;
@@ -164,7 +166,7 @@
             // b_0
             // 
             this.b_0.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_0.Location = new System.Drawing.Point(71, 302);
+            this.b_0.Location = new System.Drawing.Point(90, 197);
             this.b_0.Name = "b_0";
             this.b_0.Size = new System.Drawing.Size(35, 30);
             this.b_0.TabIndex = 2;
@@ -175,7 +177,7 @@
             // b_equals
             // 
             this.b_equals.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_equals.Location = new System.Drawing.Point(128, 302);
+            this.b_equals.Location = new System.Drawing.Point(131, 197);
             this.b_equals.Name = "b_equals";
             this.b_equals.Size = new System.Drawing.Size(35, 30);
             this.b_equals.TabIndex = 2;
@@ -186,7 +188,7 @@
             // b_subs
             // 
             this.b_subs.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_subs.Location = new System.Drawing.Point(187, 185);
+            this.b_subs.Location = new System.Drawing.Point(172, 125);
             this.b_subs.Name = "b_subs";
             this.b_subs.Size = new System.Drawing.Size(35, 30);
             this.b_subs.TabIndex = 2;
@@ -197,7 +199,7 @@
             // b_multi
             // 
             this.b_multi.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_multi.Location = new System.Drawing.Point(187, 244);
+            this.b_multi.Location = new System.Drawing.Point(172, 161);
             this.b_multi.Name = "b_multi";
             this.b_multi.Size = new System.Drawing.Size(35, 30);
             this.b_multi.TabIndex = 2;
@@ -208,7 +210,7 @@
             // b_div
             // 
             this.b_div.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_div.Location = new System.Drawing.Point(187, 302);
+            this.b_div.Location = new System.Drawing.Point(172, 197);
             this.b_div.Name = "b_div";
             this.b_div.Size = new System.Drawing.Size(35, 30);
             this.b_div.TabIndex = 2;
@@ -219,7 +221,7 @@
             // b_sum
             // 
             this.b_sum.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_sum.Location = new System.Drawing.Point(187, 131);
+            this.b_sum.Location = new System.Drawing.Point(172, 89);
             this.b_sum.Name = "b_sum";
             this.b_sum.Size = new System.Drawing.Size(35, 30);
             this.b_sum.TabIndex = 2;
@@ -230,7 +232,7 @@
             // b_save
             // 
             this.b_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_save.Location = new System.Drawing.Point(254, 131);
+            this.b_save.Location = new System.Drawing.Point(213, 89);
             this.b_save.Name = "b_save";
             this.b_save.Size = new System.Drawing.Size(76, 30);
             this.b_save.TabIndex = 3;
@@ -241,7 +243,7 @@
             // b_load
             // 
             this.b_load.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.b_load.Location = new System.Drawing.Point(254, 185);
+            this.b_load.Location = new System.Drawing.Point(213, 125);
             this.b_load.Name = "b_load";
             this.b_load.Size = new System.Drawing.Size(76, 30);
             this.b_load.TabIndex = 3;
@@ -253,7 +255,7 @@
             // 
             this.Display.AutoSize = true;
             this.Display.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Display.Location = new System.Drawing.Point(12, 13);
+            this.Display.Location = new System.Drawing.Point(102, 9);
             this.Display.Name = "Display";
             this.Display.Size = new System.Drawing.Size(0, 20);
             this.Display.TabIndex = 4;
@@ -262,12 +264,34 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // b_close
+            // 
+            this.b_close.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.b_close.Location = new System.Drawing.Point(213, 161);
+            this.b_close.Name = "b_close";
+            this.b_close.Size = new System.Drawing.Size(76, 30);
+            this.b_close.TabIndex = 3;
+            this.b_close.Text = "close";
+            this.b_close.UseVisualStyleBackColor = true;
+            this.b_close.Click += new System.EventHandler(this.b_close_click);
+            // 
+            // cb_Visual_type
+            // 
+            this.cb_Visual_type.FormattingEnabled = true;
+            this.cb_Visual_type.Location = new System.Drawing.Point(214, 198);
+            this.cb_Visual_type.Name = "cb_Visual_type";
+            this.cb_Visual_type.Size = new System.Drawing.Size(75, 21);
+            this.cb_Visual_type.TabIndex = 5;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(347, 357);
+            this.ClientSize = new System.Drawing.Size(347, 260);
+            this.ControlBox = false;
+            this.Controls.Add(this.cb_Visual_type);
             this.Controls.Add(this.Display);
+            this.Controls.Add(this.b_close);
             this.Controls.Add(this.b_load);
             this.Controls.Add(this.b_save);
             this.Controls.Add(this.b_sum);
@@ -286,8 +310,8 @@
             this.Controls.Add(this.b_5);
             this.Controls.Add(this.b_4);
             this.Controls.Add(this.b_1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximumSize = new System.Drawing.Size(400, 1000);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(1000, 1000);
             this.Name = "Form1";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ShowIcon = false;
@@ -320,6 +344,8 @@
         private System.Windows.Forms.Label Display;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.Button b_close;
+        private System.Windows.Forms.ComboBox cb_Visual_type;
     }
 }
 
